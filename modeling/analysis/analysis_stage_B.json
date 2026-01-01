@@ -1,0 +1,626 @@
+{
+  "stage": "B",
+  "data_shape": {
+    "rows": 20000,
+    "columns": 25
+  },
+  "features": [
+    "sleep_duration",
+    "sleep_quality",
+    "sleep_disorder",
+    "wake_up_during_night",
+    "feel_sleepy_during_day",
+    "average_screen_time",
+    "smart_device_before_bed",
+    "blue_light_filter",
+    "stress_level",
+    "daily_steps",
+    "physical_activity",
+    "caffeine_consumption",
+    "alcohol_consumption",
+    "smoking",
+    "age",
+    "gender",
+    "bmi",
+    "systolic",
+    "diastolic",
+    "heart_rate",
+    "medical_issue",
+    "ongoing_medication",
+    "discomfort_eye_strain",
+    "redness_in_eye",
+    "itchiness_irritation_in_eye"
+  ],
+  "missing_values": {
+    "total_rows": 20000,
+    "columns_with_missing": 2,
+    "missing_by_column": {
+      "systolic": {
+        "count": 20000,
+        "percentage": 100.0
+      },
+      "diastolic": {
+        "count": 20000,
+        "percentage": 100.0
+      }
+    },
+    "columns_high_missing": [
+      "systolic",
+      "diastolic"
+    ]
+  },
+  "class_distribution": {
+    "total_samples": 20000,
+    "class_0_count": 6963,
+    "class_1_count": 13037,
+    "class_0_percentage": 34.815000000000005,
+    "class_1_percentage": 65.185,
+    "imbalance_ratio": 0.5340952673161004
+  },
+  "feature_importance": {
+    "top_10": [
+      {
+        "feature": "discomfort_eye_strain",
+        "importance": 0.10997139847998026,
+        "std": 0.032763227977957804
+      },
+      {
+        "feature": "redness_in_eye",
+        "importance": 0.09905471481948137,
+        "std": 0.03336890396023607
+      },
+      {
+        "feature": "bmi",
+        "importance": 0.09745550808366069,
+        "std": 0.017175863251375212
+      },
+      {
+        "feature": "itchiness_irritation_in_eye",
+        "importance": 0.09586190226221518,
+        "std": 0.035214335310115454
+      },
+      {
+        "feature": "physical_activity",
+        "importance": 0.08685290063841615,
+        "std": 0.016057364265571174
+      },
+      {
+        "feature": "average_screen_time",
+        "importance": 0.08343717500644995,
+        "std": 0.014912006553790881
+      },
+      {
+        "feature": "sleep_duration",
+        "importance": 0.07635493067290361,
+        "std": 0.015401878056467087
+      },
+      {
+        "feature": "heart_rate",
+        "importance": 0.0687967443373028,
+        "std": 0.013302420512640507
+      },
+      {
+        "feature": "age",
+        "importance": 0.06330867891263176,
+        "std": 0.014302139655010176
+      },
+      {
+        "feature": "daily_steps",
+        "importance": 0.05703277948142973,
+        "std": 0.013005824074792803
+      }
+    ],
+    "all": [
+      {
+        "feature": "discomfort_eye_strain",
+        "importance": 0.10997139847998026,
+        "std": 0.032763227977957804
+      },
+      {
+        "feature": "redness_in_eye",
+        "importance": 0.09905471481948137,
+        "std": 0.03336890396023607
+      },
+      {
+        "feature": "bmi",
+        "importance": 0.09745550808366069,
+        "std": 0.017175863251375212
+      },
+      {
+        "feature": "itchiness_irritation_in_eye",
+        "importance": 0.09586190226221518,
+        "std": 0.035214335310115454
+      },
+      {
+        "feature": "physical_activity",
+        "importance": 0.08685290063841615,
+        "std": 0.016057364265571174
+      },
+      {
+        "feature": "average_screen_time",
+        "importance": 0.08343717500644995,
+        "std": 0.014912006553790881
+      },
+      {
+        "feature": "sleep_duration",
+        "importance": 0.07635493067290361,
+        "std": 0.015401878056467087
+      },
+      {
+        "feature": "heart_rate",
+        "importance": 0.0687967443373028,
+        "std": 0.013302420512640507
+      },
+      {
+        "feature": "age",
+        "importance": 0.06330867891263176,
+        "std": 0.014302139655010176
+      },
+      {
+        "feature": "daily_steps",
+        "importance": 0.05703277948142973,
+        "std": 0.013005824074792803
+      },
+      {
+        "feature": "stress_level",
+        "importance": 0.02773620958642696,
+        "std": 0.008317645084338124
+      },
+      {
+        "feature": "sleep_quality",
+        "importance": 0.02670665325136721,
+        "std": 0.008499866234999749
+      },
+      {
+        "feature": "smart_device_before_bed",
+        "importance": 0.010436226129708738,
+        "std": 0.005510427869407333
+      },
+      {
+        "feature": "alcohol_consumption",
+        "importance": 0.01038941794223899,
+        "std": 0.005037102769684966
+      },
+      {
+        "feature": "gender",
+        "importance": 0.010288985292290607,
+        "std": 0.005120770199312115
+      },
+      {
+        "feature": "feel_sleepy_during_day",
+        "importance": 0.010132724158091147,
+        "std": 0.005187650601192119
+      },
+      {
+        "feature": "sleep_disorder",
+        "importance": 0.009842920249476646,
+        "std": 0.004077763965476638
+      },
+      {
+        "feature": "wake_up_during_night",
+        "importance": 0.009730433882192984,
+        "std": 0.00423719093340835
+      },
+      {
+        "feature": "medical_issue",
+        "importance": 0.009551690658285383,
+        "std": 0.004518065648743528
+      },
+      {
+        "feature": "ongoing_medication",
+        "importance": 0.009443483701534293,
+        "std": 0.004606549224591446
+      },
+      {
+        "feature": "caffeine_consumption",
+        "importance": 0.009428911987927543,
+        "std": 0.004572825131207694
+      },
+      {
+        "feature": "smoking",
+        "importance": 0.009254160784188703,
+        "std": 0.004685507404516994
+      },
+      {
+        "feature": "blue_light_filter",
+        "importance": 0.008931449681799332,
+        "std": 0.004513715845449824
+      },
+      {
+        "feature": "systolic",
+        "importance": 0.0,
+        "std": 0.0
+      },
+      {
+        "feature": "diastolic",
+        "importance": 0.0,
+        "std": 0.0
+      }
+    ]
+  },
+  "correlations": {
+    "top_10_positive": [
+      {
+        "feature": "discomfort_eye_strain",
+        "correlation": 0.10986626160079291
+      },
+      {
+        "feature": "redness_in_eye",
+        "correlation": 0.1034102301268497
+      },
+      {
+        "feature": "itchiness_irritation_in_eye",
+        "correlation": 0.10129984917532023
+      },
+      {
+        "feature": "average_screen_time",
+        "correlation": 0.02249002921442655
+      },
+      {
+        "feature": "alcohol_consumption",
+        "correlation": 0.011258436056452438
+      },
+      {
+        "feature": "bmi",
+        "correlation": 0.0072057666547713384
+      },
+      {
+        "feature": "daily_steps",
+        "correlation": 0.005663959740471335
+      },
+      {
+        "feature": "stress_level",
+        "correlation": 0.005480671570166712
+      }
+    ],
+    "top_10_negative": [
+      {
+        "feature": "gender",
+        "correlation": -0.016321313986467065
+      },
+      {
+        "feature": "smart_device_before_bed",
+        "correlation": -0.013320256797575654
+      }
+    ],
+    "all_correlations": {
+      "sleep_duration": {
+        "correlation": -0.0008740022712390191,
+        "abs_correlation": 0.0008740022712390191
+      },
+      "sleep_quality": {
+        "correlation": -0.004990417899176252,
+        "abs_correlation": 0.004990417899176252
+      },
+      "sleep_disorder": {
+        "correlation": 0.0026193051894454157,
+        "abs_correlation": 0.0026193051894454157
+      },
+      "wake_up_during_night": {
+        "correlation": -0.0003148721317086737,
+        "abs_correlation": 0.0003148721317086737
+      },
+      "feel_sleepy_during_day": {
+        "correlation": 0.004729981861025719,
+        "abs_correlation": 0.004729981861025719
+      },
+      "average_screen_time": {
+        "correlation": 0.02249002921442655,
+        "abs_correlation": 0.02249002921442655
+      },
+      "smart_device_before_bed": {
+        "correlation": -0.013320256797575654,
+        "abs_correlation": 0.013320256797575654
+      },
+      "blue_light_filter": {
+        "correlation": 0.005023182538301687,
+        "abs_correlation": 0.005023182538301687
+      },
+      "stress_level": {
+        "correlation": 0.005480671570166712,
+        "abs_correlation": 0.005480671570166712
+      },
+      "daily_steps": {
+        "correlation": 0.005663959740471335,
+        "abs_correlation": 0.005663959740471335
+      },
+      "physical_activity": {
+        "correlation": -0.00328885879574054,
+        "abs_correlation": 0.00328885879574054
+      },
+      "caffeine_consumption": {
+        "correlation": 0.0028308860536874246,
+        "abs_correlation": 0.0028308860536874246
+      },
+      "alcohol_consumption": {
+        "correlation": 0.011258436056452438,
+        "abs_correlation": 0.011258436056452438
+      },
+      "smoking": {
+        "correlation": -0.005125821334640385,
+        "abs_correlation": 0.005125821334640385
+      },
+      "age": {
+        "correlation": 0.005257980511664932,
+        "abs_correlation": 0.005257980511664932
+      },
+      "gender": {
+        "correlation": -0.016321313986467065,
+        "abs_correlation": 0.016321313986467065
+      },
+      "bmi": {
+        "correlation": 0.0072057666547713384,
+        "abs_correlation": 0.0072057666547713384
+      },
+      "systolic": {
+        "correlation": 0.0,
+        "abs_correlation": 0.0
+      },
+      "diastolic": {
+        "correlation": 0.0,
+        "abs_correlation": 0.0
+      },
+      "heart_rate": {
+        "correlation": -0.0020830742871279133,
+        "abs_correlation": 0.0020830742871279133
+      },
+      "medical_issue": {
+        "correlation": -0.0010800044773219605,
+        "abs_correlation": 0.0010800044773219605
+      },
+      "ongoing_medication": {
+        "correlation": -0.00418829701972101,
+        "abs_correlation": 0.00418829701972101
+      },
+      "discomfort_eye_strain": {
+        "correlation": 0.10986626160079291,
+        "abs_correlation": 0.10986626160079291
+      },
+      "redness_in_eye": {
+        "correlation": 0.1034102301268497,
+        "abs_correlation": 0.1034102301268497
+      },
+      "itchiness_irritation_in_eye": {
+        "correlation": 0.10129984917532023,
+        "abs_correlation": 0.10129984917532023
+      }
+    }
+  },
+  "feature_statistics": {
+    "sleep_duration": {
+      "mean": 6.998245,
+      "std": 1.7317232351744785,
+      "min": 4.0,
+      "max": 10.0,
+      "median": 7.0,
+      "q25": 5.5,
+      "q75": 8.5,
+      "unique_values": 61
+    },
+    "sleep_quality": {
+      "mean": 2.99725,
+      "std": 1.4122826079111186,
+      "min": 1.0,
+      "max": 5.0,
+      "median": 3.0,
+      "q25": 2.0,
+      "q75": 4.0,
+      "unique_values": 5
+    },
+    "sleep_disorder": {
+      "mean": 0.49655,
+      "std": 0.5000005975295194,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "wake_up_during_night": {
+      "mean": 0.5,
+      "std": 0.5000125004687695,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.5,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "feel_sleepy_during_day": {
+      "mean": 0.4911,
+      "std": 0.4999332822130701,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "average_screen_time": {
+      "mean": 5.5198849999999995,
+      "std": 2.606305378915028,
+      "min": 1.0,
+      "max": 10.0,
+      "median": 5.5,
+      "q25": 3.3,
+      "q75": 7.8,
+      "unique_values": 91
+    },
+    "smart_device_before_bed": {
+      "mean": 0.50015,
+      "std": 0.5000124779682065,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "blue_light_filter": {
+      "mean": 0.4992,
+      "std": 0.5000118604523593,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "stress_level": {
+      "mean": 2.99375,
+      "std": 1.4072348606389944,
+      "min": 1.0,
+      "max": 5.0,
+      "median": 3.0,
+      "q25": 2.0,
+      "q75": 4.0,
+      "unique_values": 5
+    },
+    "daily_steps": {
+      "mean": 10536.9,
+      "std": 5752.729185756464,
+      "min": 1000.0,
+      "max": 20000.0,
+      "median": 11000.0,
+      "q25": 6000.0,
+      "q75": 16000.0,
+      "unique_values": 20
+    },
+    "physical_activity": {
+      "mean": 90.06975,
+      "std": 52.31728337599815,
+      "min": 0.0,
+      "max": 180.0,
+      "median": 91.0,
+      "q25": 45.0,
+      "q75": 135.0,
+      "unique_values": 181
+    },
+    "caffeine_consumption": {
+      "mean": 0.50445,
+      "std": 0.49999269708152416,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "alcohol_consumption": {
+      "mean": 0.50045,
+      "std": 0.5000122979636658,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "smoking": {
+      "mean": 0.49915,
+      "std": 0.5000117779501843,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "age": {
+      "mean": 31.4228,
+      "std": 8.103716657878875,
+      "min": 18.0,
+      "max": 45.0,
+      "median": 31.0,
+      "q25": 24.0,
+      "q75": 39.0,
+      "unique_values": 28
+    },
+    "gender": {
+      "mean": 0.5014,
+      "std": 0.500010540415926,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "bmi": {
+      "mean": 25.02484416615908,
+      "std": 6.570456883305881,
+      "min": 12.5,
+      "max": 44.44444444444444,
+      "median": 24.280263614290668,
+      "q25": 20.060954438486167,
+      "q75": 29.296874999999993,
+      "unique_values": 2589
+    },
+    "heart_rate": {
+      "mean": 79.9122,
+      "std": 11.808279423063576,
+      "min": 60.0,
+      "max": 100.0,
+      "median": 80.0,
+      "q25": 70.0,
+      "q75": 90.0,
+      "unique_values": 41
+    },
+    "medical_issue": {
+      "mean": 0.49445,
+      "std": 0.499981696249802,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "ongoing_medication": {
+      "mean": 0.5041,
+      "std": 0.49999568976591113,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "discomfort_eye_strain": {
+      "mean": 0.50185,
+      "std": 0.50000907787149,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "redness_in_eye": {
+      "mean": 0.49355,
+      "std": 0.49997089519771276,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    },
+    "itchiness_irritation_in_eye": {
+      "mean": 0.49685,
+      "std": 0.5000025776222374,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 1.0,
+      "unique_values": 2
+    }
+  },
+  "baseline_performance": {
+    "majority_class_baseline": 0.65185,
+    "rf_baseline_roc_auc": 0.6028616973849465,
+    "rf_baseline_accuracy": 0.636
+  }
+}

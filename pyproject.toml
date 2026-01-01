@@ -1,0 +1,65 @@
+[project]
+name = "dry-eye-assessment"
+version = "1.0.0"
+description = "Dry Eye Disease Risk Assessment System - FastAPI backend + React frontend"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    # Core Backend
+    "fastapi>=0.128.0",
+    "uvicorn[standard]>=0.24.0",
+    "pydantic>=2.5.0",
+    "python-dotenv>=1.0.0",
+    
+    # AI & Gemini Integration
+    "google-genai>=1.56.0",  # Gemini 2.5 API (latest)
+    
+    # Data Processing
+    "duckdb>=0.9.0",
+    "polars>=0.19.0",
+    "pandas>=2.0.0",
+    "pyarrow>=14.0.0",
+    "numpy>=1.26.0",
+    "typer>=0.9.0",
+    
+    # Machine Learning
+    "scikit-learn>=1.7.2",
+    "joblib>=1.5.3",
+    "xgboost>=3.1.2",
+    "optuna>=4.6.0",
+    "imbalanced-learn>=0.14.1",
+    "lightgbm>=4.6.0",
+    "catboost>=1.2.0",
+    "pytorch-tabnet>=4.1.0",
+    "torch>=2.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "pylint>=3.0.0",
+]
+
+# This is a monorepo, not a Python package
+# We use UV for dependency management only, not for building/installing the project
+[tool.hatch.build.targets.wheel]
+packages = []
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pylint]
+max-line-length = 100
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+

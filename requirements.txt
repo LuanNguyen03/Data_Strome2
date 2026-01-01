@@ -1,0 +1,59 @@
+# ============================================
+# Dry Eye Assessment System - Requirements
+# ============================================
+# Install: pip install -r requirements.txt
+# Or use: make install-backend
+# Or use: uv sync (recommended)
+
+# ============================================
+# Core Backend (FastAPI)
+# ============================================
+fastapi>=0.128.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+
+# ============================================
+# AI & Gemini Integration (NEW!)
+# ============================================
+google-genai>=1.56.0  # Gemini 2.5 API (latest)
+
+# ============================================
+# Data Processing & Storage
+# ============================================
+duckdb>=0.9.0
+polars>=0.19.0
+pandas>=2.0.0
+pyarrow>=14.0.0
+numpy>=1.26.0
+
+# ============================================
+# Machine Learning
+# ============================================
+scikit-learn>=1.7.2
+joblib>=1.5.3
+xgboost>=3.1.2
+lightgbm>=4.6.0
+catboost>=1.2.0
+optuna>=4.6.0
+imbalanced-learn>=0.14.1
+
+# ============================================
+# Deep Learning (Optional)
+# ============================================
+pytorch-tabnet>=4.1.0
+torch>=2.0.0
+
+# ============================================
+# Utilities
+# ============================================
+typer>=0.9.0
+tqdm>=4.65.0
+
+# ============================================
+# Notes:
+# ============================================
+# - google-generativeai is DEPRECATED, use google-genai instead
+# - Gemini 2.5 Flash is the latest model (June 2025)
+# - Free tier: 15 req/min, 1,500 req/day
+# - See GEMINI_SETUP.md for configuration

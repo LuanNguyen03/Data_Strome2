@@ -1,0 +1,294 @@
+{
+  "$defs": {
+    "Confidence": {
+      "description": "Confidence level",
+      "enum": [
+        "High",
+        "Medium",
+        "Low"
+      ],
+      "title": "Confidence",
+      "type": "string"
+    },
+    "Direction": {
+      "description": "Factor direction",
+      "enum": [
+        "increase_risk",
+        "decrease_risk",
+        "unknown"
+      ],
+      "title": "Direction",
+      "type": "string"
+    },
+    "ModeUsed": {
+      "description": "Mode used for assessment",
+      "enum": [
+        "A_only_screening",
+        "B_with_symptoms"
+      ],
+      "title": "ModeUsed",
+      "type": "string"
+    },
+    "NextStep": {
+      "description": "Recommended next steps",
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "actions": {
+          "description": "List of action items",
+          "items": {
+            "type": "string"
+          },
+          "title": "Actions",
+          "type": "array"
+        },
+        "ask_for_more_info": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Ask For More Info",
+          "type": "array"
+        },
+        "urgency": {
+          "$ref": "#/$defs/Urgency"
+        }
+      },
+      "required": [
+        "title",
+        "actions",
+        "urgency"
+      ],
+      "title": "NextStep",
+      "type": "object"
+    },
+    "RiskLevel": {
+      "description": "Risk level classification",
+      "enum": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "title": "RiskLevel",
+      "type": "string"
+    },
+    "ScreeningInfo": {
+      "description": "Stage A screening information",
+      "properties": {
+        "risk_A": {
+          "description": "Risk score 0-100",
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Risk A",
+          "type": "number"
+        },
+        "trigger_symptom": {
+          "description": "Should ask for symptoms",
+          "title": "Trigger Symptom",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "risk_A",
+        "trigger_symptom"
+      ],
+      "title": "ScreeningInfo",
+      "type": "object"
+    },
+    "Strength": {
+      "description": "Factor strength",
+      "enum": [
+        "High",
+        "Medium",
+        "Low"
+      ],
+      "title": "Strength",
+      "type": "string"
+    },
+    "TopFactor": {
+      "description": "Top contributing factor",
+      "properties": {
+        "feature": {
+          "title": "Feature",
+          "type": "string"
+        },
+        "direction": {
+          "$ref": "#/$defs/Direction"
+        },
+        "strength": {
+          "$ref": "#/$defs/Strength"
+        },
+        "note": {
+          "description": "Human-readable explanation",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "feature",
+        "direction",
+        "strength",
+        "note"
+      ],
+      "title": "TopFactor",
+      "type": "object"
+    },
+    "TriageInfo": {
+      "description": "Stage B triage information",
+      "properties": {
+        "prob_B": {
+          "description": "Probability 0-100",
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Prob B",
+          "type": "number"
+        },
+        "triage_level": {
+          "$ref": "#/$defs/RiskLevel"
+        }
+      },
+      "required": [
+        "prob_B",
+        "triage_level"
+      ],
+      "title": "TriageInfo",
+      "type": "object"
+    },
+    "Urgency": {
+      "description": "Next step urgency",
+      "enum": [
+        "none",
+        "monitor",
+        "consider_visit",
+        "visit_recommended"
+      ],
+      "title": "Urgency",
+      "type": "string"
+    }
+  },
+  "description": "Main API response contract following docs/output_contract.md",
+  "example": {
+    "confidence": "Medium",
+    "disclaimers": [
+      "K\u1ebft qu\u1ea3 ch\u1ec9 h\u1ed7 tr\u1ee3 s\u00e0ng l\u1ecdc nguy c\u01a1, kh\u00f4ng thay th\u1ebf ch\u1ea9n \u0111o\u00e1n.",
+      "N\u1ebfu tri\u1ec7u ch\u1ee9ng k\u00e9o d\u00e0i ho\u1eb7c n\u1eb7ng, n\u00ean tham kh\u1ea3o b\u00e1c s\u0129."
+    ],
+    "missing_fields": [
+      "sleep_quality"
+    ],
+    "mode_used": "A_only_screening",
+    "next_step": {
+      "actions": [
+        "\u0110i\u1ec1n th\u00eam 3 tri\u1ec7u ch\u1ee9ng m\u1eaft \u0111\u1ec3 h\u1ec7 th\u1ed1ng ph\u00e2n lo\u1ea1i ch\u00ednh x\u00e1c h\u01a1n.",
+        "Gi\u1ea3m screen time tr\u01b0\u1edbc khi ng\u1ee7 v\u00e0 ngh\u1ec9 m\u1eaft theo chu k\u1ef3."
+      ],
+      "ask_for_more_info": [
+        "discomfort_eyestrain",
+        "redness_in_eye",
+        "itchiness_irritation_in_eye"
+      ],
+      "title": "Khuy\u1ebfn ngh\u1ecb b\u1ed5 sung th\u00f4ng tin \u0111\u1ec3 t\u0103ng \u0111\u1ed9 ch\u1eafc",
+      "urgency": "monitor"
+    },
+    "request_id": "req_8f1d2c",
+    "risk_level": "Medium",
+    "risk_score": 68.0,
+    "screening": {
+      "risk_A": 68.0,
+      "trigger_symptom": true
+    },
+    "timestamp": "2025-12-26T20:10:00+07:00",
+    "top_factors": [
+      {
+        "direction": "increase_risk",
+        "feature": "average_screen_time",
+        "note": "Th\u1eddi gian nh\u00ecn m\u00e0n h\u00ecnh cao th\u01b0\u1eddng \u0111i k\u00e8m nguy c\u01a1 t\u0103ng.",
+        "strength": "High"
+      }
+    ]
+  },
+  "properties": {
+    "request_id": {
+      "title": "Request Id",
+      "type": "string"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "title": "Timestamp",
+      "type": "string"
+    },
+    "mode_used": {
+      "$ref": "#/$defs/ModeUsed"
+    },
+    "risk_score": {
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Risk Score",
+      "type": "number"
+    },
+    "risk_level": {
+      "$ref": "#/$defs/RiskLevel"
+    },
+    "confidence": {
+      "$ref": "#/$defs/Confidence"
+    },
+    "missing_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Missing Fields",
+      "type": "array"
+    },
+    "top_factors": {
+      "items": {
+        "$ref": "#/$defs/TopFactor"
+      },
+      "title": "Top Factors",
+      "type": "array"
+    },
+    "next_step": {
+      "$ref": "#/$defs/NextStep"
+    },
+    "disclaimers": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Disclaimers",
+      "type": "array"
+    },
+    "screening": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ScreeningInfo"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "triage": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TriageInfo"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "request_id",
+    "timestamp",
+    "mode_used",
+    "risk_score",
+    "risk_level",
+    "confidence",
+    "next_step"
+  ],
+  "title": "AssessmentResponse",
+  "type": "object"
+}

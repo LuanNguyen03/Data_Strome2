@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-01-01T07:28:46.588292",
+  "input_file": "data\\standardized\\clean_assessments.parquet",
+  "total_rows": 20000,
+  "kpis": [
+    {
+      "filename": "agg_ded_by_age_gender.parquet",
+      "description": "DED rate by age_band × gender",
+      "dimensions": [
+        "age_band",
+        "gender"
+      ],
+      "num_cells": 10,
+      "total_n": 20000,
+      "total_positives": 13037,
+      "overall_rate": 0.65185,
+      "min_n": 1740,
+      "max_n": 2564,
+      "has_low_n_cells": false
+    },
+    {
+      "filename": "agg_ded_by_screen_sleep.parquet",
+      "description": "Heatmap: screen_time_band × sleep_quality",
+      "dimensions": [
+        "screen_time_band",
+        "sleep_quality"
+      ],
+      "num_cells": 30,
+      "total_n": 20000,
+      "total_positives": 13037,
+      "overall_rate": 0.65185,
+      "min_n": 14,
+      "max_n": 957,
+      "has_low_n_cells": false
+    },
+    {
+      "filename": "agg_ded_by_symptom_score.parquet",
+      "description": "DED rate by symptom_score",
+      "dimensions": [
+        "symptom_score"
+      ],
+      "num_cells": 4,
+      "total_n": 20000,
+      "total_positives": 13037,
+      "overall_rate": 0.65185,
+      "min_n": 2445,
+      "max_n": 7528,
+      "has_low_n_cells": false
+    },
+    {
+      "filename": "agg_ded_by_stress_sleepband.parquet",
+      "description": "DED rate by stress_level × sleep_duration_band",
+      "dimensions": [
+        "stress_level",
+        "sleep_duration_band"
+      ],
+      "num_cells": 25,
+      "total_n": 20000,
+      "total_positives": 13037,
+      "overall_rate": 0.65185,
+      "min_n": 611,
+      "max_n": 1352,
+      "has_low_n_cells": false
+    },
+    {
+      "filename": "agg_data_quality_by_group.parquet",
+      "description": "Data quality metrics by age_band × gender",
+      "dimensions": [
+        "age_band",
+        "gender"
+      ],
+      "num_cells": 10,
+      "total_n": 20000,
+      "total_positives": 0,
+      "overall_rate": 0.0,
+      "min_n": 1740,
+      "max_n": 2564,
+      "has_low_n_cells": false
+    }
+  ]
+}

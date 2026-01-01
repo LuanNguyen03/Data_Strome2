@@ -1,0 +1,2532 @@
+{
+  "entries": [
+    {
+      "model_version": "v1.0.20251229225254",
+      "created_at": "2025-12-29T22:52:54.063584",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A.joblib",
+          "features": "modeling\\artifacts\\feature_list_A.json",
+          "metadata": "modeling\\artifacts\\model_metadata.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B.joblib",
+          "features": "modeling\\artifacts\\feature_list_B.json",
+          "metadata": "modeling\\artifacts\\model_metadata.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices.json",
+          "split_report": "modeling\\reports\\data_split_report.json",
+          "calibration": "modeling\\reports\\calibration_report.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices.json",
+          "split_report": "modeling\\reports\\data_split_report.json",
+          "calibration": "modeling\\reports\\calibration_report.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.5071220258231263,
+          "val_pr_auc": 0.6573815976432895,
+          "val_f1": 0.7889797154102332,
+          "test_roc_auc": 0.49031749795060015,
+          "test_pr_auc": 0.6554638146416862,
+          "test_f1": 0.7889797154102332,
+          "threshold": 0.1
+        },
+        "stage_B": {
+          "val_roc_auc": 0.5717702986960668,
+          "val_pr_auc": 0.6900486284298014,
+          "val_f1": 0.7959506485289465,
+          "test_roc_auc": 0.5842253075889613,
+          "test_pr_auc": 0.698761843401599,
+          "test_f1": 0.7932342712614606,
+          "threshold": 0.32999999999999985
+        }
+      }
+    },
+    {
+      "model_version": "v1.1.improved.20251229231818",
+      "created_at": "2025-12-29T23:18:18.798699",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.9344116329358999,
+          "val_pr_auc": 0.9615000073989958,
+          "val_f1": 0.7891630089299229,
+          "test_roc_auc": 0.5075949642453046,
+          "test_pr_auc": 0.6633483110525922,
+          "test_f1": 0.7891630089299229,
+          "threshold": 0.1
+        },
+        "stage_B": {
+          "val_roc_auc": 0.8407566078515764,
+          "val_pr_auc": 0.9016485920560876,
+          "val_f1": 0.8368590892793116,
+          "test_roc_auc": 0.6031668011821947,
+          "test_pr_auc": 0.7146169201118497,
+          "test_f1": 0.7551954913702008,
+          "threshold": 0.6699999999999997
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v1.1.improved.20251229232040",
+      "created_at": "2025-12-29T23:20:40.380897",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.9964031897115033,
+          "val_pr_auc": 0.9970514779703099,
+          "val_f1": 0.7891630089299229,
+          "test_roc_auc": 0.506671116555984,
+          "test_pr_auc": 0.6606849857574661,
+          "test_f1": 0.7891630089299229,
+          "threshold": 0.1
+        },
+        "stage_B": {
+          "val_roc_auc": 0.7708262943298883,
+          "val_pr_auc": 0.8477661532062813,
+          "val_f1": 0.8142153413089374,
+          "test_roc_auc": 0.6050330836603974,
+          "test_pr_auc": 0.7163820194133601,
+          "test_f1": 0.7633187772925765,
+          "threshold": 0.6699999999999997
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v1.1.improved.20251229233403",
+      "created_at": "2025-12-29T23:34:03.867535",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.8802407015625004,
+          "val_pr_auc": 0.9278996515976713,
+          "val_f1": 0.8365949119373777,
+          "test_roc_auc": 0.51426318947469,
+          "test_pr_auc": 0.6636285488489765,
+          "test_f1": 0.7668246445497631,
+          "threshold": 0.6200000000000003
+        },
+        "stage_B": {
+          "val_roc_auc": 0.9274048471300554,
+          "val_pr_auc": 0.9600566212036179,
+          "val_f1": 0.9033133113737648,
+          "test_roc_auc": 0.6004909472564202,
+          "test_pr_auc": 0.7164039018865198,
+          "test_f1": 0.7395927194089025,
+          "threshold": 0.6600000000000004
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v1.0.20251229233453",
+      "created_at": "2025-12-29T23:34:53.098969",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A.joblib",
+          "features": "modeling\\artifacts\\feature_list_A.json",
+          "metadata": "modeling\\artifacts\\model_metadata.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B.joblib",
+          "features": "modeling\\artifacts\\feature_list_B.json",
+          "metadata": "modeling\\artifacts\\model_metadata.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices.json",
+          "split_report": "modeling\\reports\\data_split_report.json",
+          "calibration": "modeling\\reports\\calibration_report.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices.json",
+          "split_report": "modeling\\reports\\data_split_report.json",
+          "calibration": "modeling\\reports\\calibration_report.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.5071220258231263,
+          "val_pr_auc": 0.6573815976432895,
+          "val_f1": 0.7889797154102332,
+          "test_roc_auc": 0.49031749795060015,
+          "test_pr_auc": 0.6554638146416862,
+          "test_f1": 0.7889797154102332,
+          "threshold": 0.1
+        },
+        "stage_B": {
+          "val_roc_auc": 0.5717702986960668,
+          "val_pr_auc": 0.6900486284298014,
+          "val_f1": 0.7959506485289465,
+          "test_roc_auc": 0.5842253075889613,
+          "test_pr_auc": 0.698761843401599,
+          "test_f1": 0.7932342712614606,
+          "threshold": 0.32999999999999985
+        }
+      }
+    },
+    {
+      "model_version": "v1.1.improved.20251230000137",
+      "created_at": "2025-12-30T00:01:37.597917",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.8058610494524241,
+          "val_pr_auc": 0.8733181023705068,
+          "val_f1": 0.8174526788578762,
+          "test_roc_auc": 0.5298471644760048,
+          "test_pr_auc": 0.6728092624638953,
+          "test_f1": 0.7672400189364053,
+          "threshold": 0.6100000000000003
+        },
+        "stage_B": {
+          "val_roc_auc": 0.7696682491860917,
+          "val_pr_auc": 0.8510256836250578,
+          "val_f1": 0.81184,
+          "test_roc_auc": 0.6099319546937383,
+          "test_pr_auc": 0.7200308766186212,
+          "test_f1": 0.7987210231814549,
+          "threshold": 0.37000000000000005
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v1.0.20251230000511",
+      "created_at": "2025-12-30T00:05:11.140835",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A.joblib",
+          "features": "modeling\\artifacts\\feature_list_A.json",
+          "metadata": "modeling\\artifacts\\model_metadata.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B.joblib",
+          "features": "modeling\\artifacts\\feature_list_B.json",
+          "metadata": "modeling\\artifacts\\model_metadata.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices.json",
+          "split_report": "modeling\\reports\\data_split_report.json",
+          "calibration": "modeling\\reports\\calibration_report.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices.json",
+          "split_report": "modeling\\reports\\data_split_report.json",
+          "calibration": "modeling\\reports\\calibration_report.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.5006018089791386,
+          "val_pr_auc": 0.6559631573560001,
+          "val_f1": 0.7888349514563107,
+          "test_roc_auc": 0.49475059003714944,
+          "test_pr_auc": 0.6556005135749972,
+          "test_f1": 0.7872630780894617,
+          "threshold": 0.1
+        },
+        "stage_B": {
+          "val_roc_auc": 0.5707694866463393,
+          "val_pr_auc": 0.6933033598322929,
+          "val_f1": 0.7918813427010148,
+          "test_roc_auc": 0.5790459778755689,
+          "test_pr_auc": 0.6967964566448095,
+          "test_f1": 0.7891706861677299,
+          "threshold": 0.18999999999999995
+        }
+      }
+    },
+    {
+      "model_version": "v1.1.improved.20251230001852",
+      "created_at": "2025-12-30T00:18:52.106143",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.5021801979374653,
+          "val_pr_auc": 0.6608137067921898,
+          "val_f1": 0.7887793783169067,
+          "test_roc_auc": 0.4963588560369936,
+          "test_pr_auc": 0.6570181581391263,
+          "test_f1": 0.7875018959502502,
+          "threshold": 0.5399999999999998
+        },
+        "stage_B": {
+          "val_roc_auc": 0.5906430888620318,
+          "val_pr_auc": 0.6979409193005028,
+          "val_f1": 0.8020918450727244,
+          "test_roc_auc": 0.6017412394869299,
+          "test_pr_auc": 0.7069416138707042,
+          "test_f1": 0.8034103951467454,
+          "threshold": 0.35000000000000003
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v1.0.20251230001943",
+      "created_at": "2025-12-30T00:19:43.873406",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A.joblib",
+          "features": "modeling\\artifacts\\feature_list_A.json",
+          "metadata": "modeling\\artifacts\\model_metadata.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B.joblib",
+          "features": "modeling\\artifacts\\feature_list_B.json",
+          "metadata": "modeling\\artifacts\\model_metadata.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices.json",
+          "split_report": "modeling\\reports\\data_split_report.json",
+          "calibration": "modeling\\reports\\calibration_report.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices.json",
+          "split_report": "modeling\\reports\\data_split_report.json",
+          "calibration": "modeling\\reports\\calibration_report.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.5006018089791386,
+          "val_pr_auc": 0.6559631573560001,
+          "val_f1": 0.7888349514563107,
+          "test_roc_auc": 0.49475059003714944,
+          "test_pr_auc": 0.6556005135749972,
+          "test_f1": 0.7872630780894617,
+          "threshold": 0.1
+        },
+        "stage_B": {
+          "val_roc_auc": 0.5707694866463393,
+          "val_pr_auc": 0.6933033598322929,
+          "val_f1": 0.7918813427010148,
+          "test_roc_auc": 0.5790459778755689,
+          "test_pr_auc": 0.6967964566448095,
+          "test_f1": 0.7891706861677299,
+          "threshold": 0.18999999999999995
+        }
+      }
+    },
+    {
+      "model_version": "v1.1.improved.20251230002945",
+      "created_at": "2025-12-30T00:29:45.124748",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.49559871250603393,
+          "val_pr_auc": 0.6543609262301904,
+          "val_f1": 0.7882746051032807,
+          "test_roc_auc": 0.49789649105850364,
+          "test_pr_auc": 0.6575492342619076,
+          "test_f1": 0.7855297157622739,
+          "threshold": 0.5699999999999997
+        },
+        "stage_B": {
+          "val_roc_auc": 0.586396831546631,
+          "val_pr_auc": 0.6979646765204097,
+          "val_f1": 0.8018883281784145,
+          "test_roc_auc": 0.6041330549949594,
+          "test_pr_auc": 0.7084834285279921,
+          "test_f1": 0.802483254370201,
+          "threshold": 0.33999999999999986
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v1.1.improved.20251230004153",
+      "created_at": "2025-12-30T00:41:53.530687",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.4941566289444923,
+          "val_pr_auc": 0.6529656979070011,
+          "val_f1": 0.7889074102136687,
+          "test_roc_auc": 0.48933238167383575,
+          "test_pr_auc": 0.6515952610367912,
+          "test_f1": 0.7887963663890991,
+          "threshold": 0.5599999999999997
+        },
+        "stage_B": {
+          "val_roc_auc": 0.5875186662668376,
+          "val_pr_auc": 0.6993884517732273,
+          "val_f1": 0.8013576854695329,
+          "test_roc_auc": 0.5965113803991737,
+          "test_pr_auc": 0.7054517658653701,
+          "test_f1": 0.8005193962019153,
+          "threshold": 0.32999999999999985
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v1.1.improved.20251230010153",
+      "created_at": "2025-12-30T01:01:53.532828",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.49436287690851655,
+          "val_pr_auc": 0.6557638230301498,
+          "val_f1": 0.7880814837336576,
+          "test_roc_auc": 0.49311244699578777,
+          "test_pr_auc": 0.6561167869037885,
+          "test_f1": 0.7853450896929158,
+          "threshold": 0.5699999999999997
+        },
+        "stage_B": {
+          "val_roc_auc": 0.5931475284251825,
+          "val_pr_auc": 0.7011314050364629,
+          "val_f1": 0.8022247668902339,
+          "test_roc_auc": 0.6020395968554483,
+          "test_pr_auc": 0.709127846770115,
+          "test_f1": 0.8028885606433612,
+          "threshold": 0.3799999999999999
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v1.1.improved.20251230011834",
+      "created_at": "2025-12-30T01:18:34.421960",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.4956374012095659,
+          "val_pr_auc": 0.6548236720054936,
+          "val_f1": 0.7872793670115642,
+          "test_roc_auc": 0.49638253737865723,
+          "test_pr_auc": 0.6592366024086875,
+          "test_f1": 0.7856382169481211,
+          "threshold": 0.5799999999999997
+        },
+        "stage_B": {
+          "val_roc_auc": 0.5917840614106755,
+          "val_pr_auc": 0.7000645381452507,
+          "val_f1": 0.8017664376840039,
+          "test_roc_auc": 0.5929838242668215,
+          "test_pr_auc": 0.7003769707947749,
+          "test_f1": 0.8026251025430681,
+          "threshold": 0.44999999999999984
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v1.1.improved.20251230014054",
+      "created_at": "2025-12-30T01:40:54.428491",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_A": {
+          "model": "modeling\\artifacts\\model_A_screening_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        },
+        "stage_B": {
+          "model": "modeling\\artifacts\\model_B_triage_improved.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_improved.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_improved.json",
+          "metadata": "modeling\\artifacts\\model_metadata_improved.json"
+        }
+      },
+      "report_paths": {
+        "stage_A": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        },
+        "stage_B": {
+          "metrics": "modeling\\reports\\model_metrics_improved.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_improved.json",
+          "split_report": "modeling\\reports\\data_split_report_improved.json",
+          "calibration": "modeling\\reports\\calibration_report_improved.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_A": {
+          "val_roc_auc": 0.4992187910895372,
+          "val_pr_auc": 0.6599971649946387,
+          "val_f1": 0.7891630089299229,
+          "test_roc_auc": 0.4950971361823089,
+          "test_pr_auc": 0.6598090245272434,
+          "test_f1": 0.7891630089299229,
+          "threshold": 0.1
+        },
+        "stage_B": {
+          "val_roc_auc": 0.5942309498062949,
+          "val_pr_auc": 0.7020886532815902,
+          "val_f1": 0.793543428132206,
+          "test_roc_auc": 0.5971575230528223,
+          "test_pr_auc": 0.704597558629677,
+          "test_f1": 0.7906547802028896,
+          "threshold": 0.3100000000000001
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_111850",
+      "created_at": "2025-12-30T11:18:50.895682",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "feature_selector": "modeling\\artifacts\\feature_selector_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.502696444626613,
+          "pr_auc": 0.6557573251452985,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.49698930291767895,
+          "test_pr_auc": 0.6512640369280793,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.5803696958077711,
+          "pr_auc": 0.6908379126800076,
+          "precision": 0.653373463757211,
+          "recall": 0.9988496932515337,
+          "f1": 0.7899924184988628,
+          "confusion_matrix": [
+            [
+              10,
+              1382
+            ],
+            [
+              3,
+              2605
+            ]
+          ],
+          "test_roc_auc": 0.595201609450067,
+          "test_pr_auc": 0.7018072584556351,
+          "test_precision": 0.6520650813516896,
+          "test_recall": 0.9992328346758726,
+          "test_f1": 0.7891548015752802,
+          "test_confusion_matrix": [
+            [
+              3,
+              1390
+            ],
+            [
+              2,
+              2605
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_112557",
+      "created_at": "2025-12-30T11:25:57.798573",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "feature_selector": "modeling\\artifacts\\feature_selector_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.4893611775879699,
+          "pr_auc": 0.6519548791618794,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.5069799377731443,
+          "test_pr_auc": 0.6563194783702867,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.5917326936129328,
+          "pr_auc": 0.6986660298687551,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.5976080192733078,
+          "test_pr_auc": 0.703404816511882,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_113314",
+      "created_at": "2025-12-30T11:33:14.653716",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "feature_selector": "modeling\\artifacts\\feature_selector_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.5085569214530005,
+          "pr_auc": 0.6609372177441197,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.5092592669082714,
+          "test_pr_auc": 0.659882626191356,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.5782689260718568,
+          "pr_auc": 0.6908543193674879,
+          "precision": 0.6542432636615462,
+          "recall": 0.9961656441717791,
+          "f1": 0.7897856817145463,
+          "confusion_matrix": [
+            [
+              19,
+              1373
+            ],
+            [
+              10,
+              2598
+            ]
+          ],
+          "test_roc_auc": 0.5997073977482348,
+          "test_pr_auc": 0.7041053359730349,
+          "test_precision": 0.6535849056603774,
+          "test_recall": 0.996547756041427,
+          "test_f1": 0.7894257064721969,
+          "test_confusion_matrix": [
+            [
+              16,
+              1377
+            ],
+            [
+              9,
+              2598
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_113641",
+      "created_at": "2025-12-30T11:36:41.451908",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "feature_selector": "modeling\\artifacts\\feature_selector_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.5085569214530005,
+          "pr_auc": 0.6609372177441197,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.5092592669082714,
+          "test_pr_auc": 0.659882626191356,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.5782689260718568,
+          "pr_auc": 0.6908543193674879,
+          "precision": 0.6542432636615462,
+          "recall": 0.9961656441717791,
+          "f1": 0.7897856817145463,
+          "confusion_matrix": [
+            [
+              19,
+              1373
+            ],
+            [
+              10,
+              2598
+            ]
+          ],
+          "test_roc_auc": 0.5997073977482348,
+          "test_pr_auc": 0.7041053359730349,
+          "test_precision": 0.6535849056603774,
+          "test_recall": 0.996547756041427,
+          "test_f1": 0.7894257064721969,
+          "test_confusion_matrix": [
+            [
+              16,
+              1377
+            ],
+            [
+              9,
+              2598
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_121843",
+      "created_at": "2025-12-30T12:18:43.283388",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "feature_selector": "modeling\\artifacts\\feature_selector_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.5013188861857415,
+          "pr_auc": 0.6543328817225997,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.5147888601867356,
+          "test_pr_auc": 0.6625105055592819,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.5948226279881531,
+          "pr_auc": 0.7043881968140203,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.6063270211543221,
+          "test_pr_auc": 0.7099656789894176,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_132133",
+      "created_at": "2025-12-30T13:21:33.567693",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.502109722075312,
+          "pr_auc": 0.6543709733409313,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.5084722753446118,
+          "test_pr_auc": 0.665221190643055,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.5829036210422396,
+          "pr_auc": 0.6937694841630043,
+          "precision": 0.6521521521521522,
+          "recall": 0.9992331288343558,
+          "f1": 0.7892186553603876,
+          "confusion_matrix": [
+            [
+              2,
+              1390
+            ],
+            [
+              2,
+              2606
+            ]
+          ],
+          "test_roc_auc": 0.5832258723614235,
+          "test_pr_auc": 0.6900700147870333,
+          "test_precision": 0.6522391793845385,
+          "test_recall": 1.0,
+          "test_f1": 0.7895215021199273,
+          "test_confusion_matrix": [
+            [
+              3,
+              1390
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_182122",
+      "created_at": "2025-12-30T18:21:22.089435",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.4962566825770397,
+          "pr_auc": 0.6491896361059645,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.5095848853561467,
+          "test_pr_auc": 0.6555307437386569,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.594691097463155,
+          "pr_auc": 0.7012531074135385,
+          "precision": 0.6527081243731193,
+          "recall": 0.9980828220858896,
+          "f1": 0.7892662219526986,
+          "confusion_matrix": [
+            [
+              7,
+              1385
+            ],
+            [
+              5,
+              2603
+            ]
+          ],
+          "test_roc_auc": 0.5898383362921242,
+          "test_pr_auc": 0.6989066177957898,
+          "test_precision": 0.6523702031602708,
+          "test_recall": 0.997698504027618,
+          "test_f1": 0.7888989990900819,
+          "test_confusion_matrix": [
+            [
+              7,
+              1386
+            ],
+            [
+              6,
+              2601
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_182734",
+      "created_at": "2025-12-30T18:27:34.233792",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.5122434948170087,
+          "pr_auc": 0.6610041477786337,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.5000978920576911,
+          "test_pr_auc": 0.6560524193848728,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.5832877452665538,
+          "pr_auc": 0.6940974605373892,
+          "precision": 0.6523046092184369,
+          "recall": 0.9984662576687117,
+          "f1": 0.7890909090909091,
+          "confusion_matrix": [
+            [
+              4,
+              1388
+            ],
+            [
+              4,
+              2604
+            ]
+          ],
+          "test_roc_auc": 0.5842418294552383,
+          "test_pr_auc": 0.6912743698837827,
+          "test_precision": 0.6518908089156022,
+          "test_recall": 0.9984656693517453,
+          "test_f1": 0.7887878787878788,
+          "test_confusion_matrix": [
+            [
+              3,
+              1390
+            ],
+            [
+              4,
+              2603
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_185315",
+      "created_at": "2025-12-30T18:53:15.363785",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.5011432826052464,
+          "pr_auc": 0.654047904792016,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.5027938475874358,
+          "test_pr_auc": 0.660430960438362,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.5937108851632467,
+          "pr_auc": 0.7001805292401536,
+          "precision": 0.6522283425137707,
+          "recall": 0.9988496932515337,
+          "f1": 0.7891548015752802,
+          "confusion_matrix": [
+            [
+              3,
+              1389
+            ],
+            [
+              3,
+              2605
+            ]
+          ],
+          "test_roc_auc": 0.5885377900516886,
+          "test_pr_auc": 0.6959144464802386,
+          "test_precision": 0.6524024024024024,
+          "test_recall": 1.0,
+          "test_f1": 0.789641072239891,
+          "test_confusion_matrix": [
+            [
+              4,
+              1389
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_190237",
+      "created_at": "2025-12-30T19:02:37.197424",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.4884412902827727,
+          "pr_auc": 0.6449916236159228,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.4943006445455399,
+          "test_pr_auc": 0.6490990059730328,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.58472797008321,
+          "pr_auc": 0.6896970012152249,
+          "precision": 0.6523153942428035,
+          "recall": 0.9992331288343558,
+          "f1": 0.7893381796153264,
+          "confusion_matrix": [
+            [
+              3,
+              1389
+            ],
+            [
+              2,
+              2606
+            ]
+          ],
+          "test_roc_auc": 0.593407472454607,
+          "test_pr_auc": 0.7015138823136879,
+          "test_precision": 0.6519889917438079,
+          "test_recall": 0.9996164173379364,
+          "test_f1": 0.7892186553603876,
+          "test_confusion_matrix": [
+            [
+              2,
+              1391
+            ],
+            [
+              1,
+              2606
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_192407",
+      "created_at": "2025-12-30T19:24:07.081205",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.5112440005553205,
+          "pr_auc": 0.6582457880343879,
+          "precision": 0.652,
+          "recall": 1.0,
+          "f1": 0.7893462469733656,
+          "confusion_matrix": [
+            [
+              0,
+              1392
+            ],
+            [
+              0,
+              2608
+            ]
+          ],
+          "test_roc_auc": 0.4855173450682642,
+          "test_pr_auc": 0.6472009287818279,
+          "test_precision": 0.65175,
+          "test_recall": 1.0,
+          "test_f1": 0.7891630089299229,
+          "test_confusion_matrix": [
+            [
+              0,
+              1393
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.5736657708818137,
+          "pr_auc": 0.6835816279643707,
+          "precision": 0.6537013801756587,
+          "recall": 0.9988496932515337,
+          "f1": 0.7902320643106325,
+          "confusion_matrix": [
+            [
+              12,
+              1380
+            ],
+            [
+              3,
+              2605
+            ]
+          ],
+          "test_roc_auc": 0.5862152286998035,
+          "test_pr_auc": 0.6902159924775144,
+          "test_precision": 0.6522938079719228,
+          "test_recall": 0.9980820866896817,
+          "test_f1": 0.7889630078835658,
+          "test_confusion_matrix": [
+            [
+              6,
+              1387
+            ],
+            [
+              5,
+              2602
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_203537",
+      "created_at": "2025-12-30T20:35:37.537439",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "stage_a": {
+          "model": "modeling\\artifacts\\model_A_screening_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_A_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_A_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        },
+        "stage_b": {
+          "model": "modeling\\artifacts\\model_B_triage_advanced.joblib",
+          "preprocessing": "modeling\\artifacts\\preprocessing_B_advanced.joblib",
+          "features": "modeling\\artifacts\\feature_list_B_advanced.json",
+          "metadata": "modeling\\artifacts\\model_metadata_advanced.json"
+        }
+      },
+      "report_paths": {
+        "stage_a": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        },
+        "stage_b": {
+          "metrics": "modeling\\reports\\model_metrics_advanced.json",
+          "confusion_matrices": "modeling\\reports\\confusion_matrices_advanced.json",
+          "data_split": "modeling\\reports\\data_split_report_advanced.json"
+        }
+      },
+      "metrics_summary": {
+        "stage_a": {
+          "roc_auc": 0.49300119878710946,
+          "pr_auc": 0.6472350919356185,
+          "precision": 0.6520760380190095,
+          "recall": 0.9996165644171779,
+          "f1": 0.7892824704813806,
+          "confusion_matrix": [
+            [
+              1,
+              1391
+            ],
+            [
+              1,
+              2607
+            ]
+          ],
+          "test_roc_auc": 0.4908566615201053,
+          "test_pr_auc": 0.6501567199556734,
+          "test_precision": 0.6518259129564783,
+          "test_recall": 0.9996164173379364,
+          "test_f1": 0.7890991672975018,
+          "test_confusion_matrix": [
+            [
+              1,
+              1392
+            ],
+            [
+              1,
+              2606
+            ]
+          ]
+        },
+        "stage_b": {
+          "roc_auc": 0.5816719168694028,
+          "pr_auc": 0.693578318806461,
+          "precision": 0.6521412471825695,
+          "recall": 0.9984662576687117,
+          "f1": 0.7889713679745494,
+          "confusion_matrix": [
+            [
+              3,
+              1389
+            ],
+            [
+              4,
+              2604
+            ]
+          ],
+          "test_roc_auc": 0.5830302259282603,
+          "test_pr_auc": 0.6886152922063572,
+          "test_precision": 0.6525657071339174,
+          "test_recall": 1.0,
+          "test_f1": 0.7897606785822479,
+          "test_confusion_matrix": [
+            [
+              5,
+              1388
+            ],
+            [
+              0,
+              2607
+            ]
+          ]
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_230335",
+      "created_at": "2025-12-30T23:03:35.755107",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "model": "modeling\\artifacts\\model_B_advanced.joblib"
+      },
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.05,
+          "roc_auc": 0.5112971014313168,
+          "pr_auc": 0.6665123331531413,
+          "precision": 0.65175,
+          "recall": 1.0,
+          "f1": 0.7891630089299229,
+          "confusion_matrix": {
+            "tn": 0,
+            "fp": 1393,
+            "fn": 0,
+            "tp": 2607
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.44999999999999984,
+          "roc_auc": 0.599073921858732,
+          "pr_auc": 0.7015844749472065,
+          "precision": 0.7022681596325007,
+          "recall": 0.9382431914077484,
+          "f1": 0.8032840722495895,
+          "confusion_matrix": {
+            "tn": 356,
+            "fp": 1037,
+            "fn": 161,
+            "tp": 2446
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_230450",
+      "created_at": "2025-12-30T23:04:50.902409",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "model": "modeling\\artifacts\\model_B_advanced.joblib"
+      },
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.05,
+          "roc_auc": 0.5082273386770555,
+          "pr_auc": 0.6656495859261445,
+          "precision": 0.65175,
+          "recall": 1.0,
+          "f1": 0.7891630089299229,
+          "confusion_matrix": {
+            "tn": 0,
+            "fp": 1393,
+            "fn": 0,
+            "tp": 2607
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.4199999999999998,
+          "roc_auc": 0.5997857389308314,
+          "pr_auc": 0.7027711201724424,
+          "precision": 0.7022681596325007,
+          "recall": 0.9382431914077484,
+          "f1": 0.8032840722495895,
+          "confusion_matrix": {
+            "tn": 356,
+            "fp": 1037,
+            "fn": 161,
+            "tp": 2446
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_231320",
+      "created_at": "2025-12-30T23:13:20.568951",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "model": "modeling\\artifacts\\model_B_advanced.joblib"
+      },
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.05,
+          "roc_auc": 0.5112971014313168,
+          "pr_auc": 0.6665123331531413,
+          "precision": 0.65175,
+          "recall": 1.0,
+          "f1": 0.7891630089299229,
+          "confusion_matrix": {
+            "tn": 0,
+            "fp": 1393,
+            "fn": 0,
+            "tp": 2607
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.44000000000000006,
+          "roc_auc": 0.6006748907009705,
+          "pr_auc": 0.7031700226141577,
+          "precision": 0.7022681596325007,
+          "recall": 0.9382431914077484,
+          "f1": 0.8032840722495895,
+          "confusion_matrix": {
+            "tn": 356,
+            "fp": 1037,
+            "fn": 161,
+            "tp": 2446
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251230_231452",
+      "created_at": "2025-12-30T23:14:52.690043",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "model": "modeling\\artifacts\\model_B_advanced.joblib"
+      },
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.05,
+          "roc_auc": 0.5126228435178248,
+          "pr_auc": 0.669116855432106,
+          "precision": 0.65175,
+          "recall": 1.0,
+          "f1": 0.7891630089299229,
+          "confusion_matrix": {
+            "tn": 0,
+            "fp": 1393,
+            "fn": 0,
+            "tp": 2607
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.49000000000000005,
+          "roc_auc": 0.5971429287376111,
+          "pr_auc": 0.7016975639360364,
+          "precision": 0.7022681596325007,
+          "recall": 0.9382431914077484,
+          "f1": 0.8032840722495895,
+          "confusion_matrix": {
+            "tn": 356,
+            "fp": 1037,
+            "fn": 161,
+            "tp": 2446
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "advanced_20251231_000650",
+      "created_at": "2025-12-31T00:06:50.588370",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "model": "modeling\\artifacts\\model_B_advanced.joblib"
+      },
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.05,
+          "roc_auc": 0.5074114338474112,
+          "pr_auc": 0.6628837391114965,
+          "precision": 0.65175,
+          "recall": 1.0,
+          "f1": 0.7891630089299229,
+          "confusion_matrix": {
+            "tn": 0,
+            "fp": 1393,
+            "fn": 0,
+            "tp": 2607
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.4700000000000001,
+          "roc_auc": 0.597311727138074,
+          "pr_auc": 0.7011416734140832,
+          "precision": 0.7022681596325007,
+          "recall": 0.9382431914077484,
+          "f1": 0.8032840722495895,
+          "confusion_matrix": {
+            "tn": 356,
+            "fp": 1037,
+            "fn": 161,
+            "tp": 2446
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v6_medical",
+      "created_at": "2025-12-31T11:51:52.315365",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "model": "modeling\\artifacts\\model_B_medical_v6.joblib"
+      },
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.01,
+          "roc_auc": 0.5003314011010722,
+          "pr_auc": 0.6562184810797917,
+          "precision": 0.65175,
+          "recall": 1.0,
+          "f1": 0.7891630089299229,
+          "confusion_matrix": {
+            "tn": 0,
+            "fp": 1393,
+            "fn": 0,
+            "tp": 2607
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.35,
+          "roc_auc": 0.5911569189032455,
+          "pr_auc": 0.693726434301561,
+          "precision": 0.6915548098434005,
+          "recall": 0.9485999232834675,
+          "f1": 0.7999353064855248,
+          "confusion_matrix": {
+            "tn": 290,
+            "fp": 1103,
+            "fn": 134,
+            "tp": 2473
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v6_medical",
+      "created_at": "2025-12-31T12:16:41.187543",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "model": "modeling\\artifacts\\model_B_medical_v7.joblib"
+      },
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.19,
+          "roc_auc": 0.5178807897782518,
+          "pr_auc": 0.6623765435833717,
+          "precision": 0.65175,
+          "recall": 1.0,
+          "f1": 0.7891630089299229,
+          "confusion_matrix": {
+            "tn": 0,
+            "fp": 1393,
+            "fn": 0,
+            "tp": 2607
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.35,
+          "roc_auc": 0.5939276358778935,
+          "pr_auc": 0.7017924168869972,
+          "precision": 0.6984667802385008,
+          "recall": 0.9436133486766398,
+          "f1": 0.8027410670582477,
+          "confusion_matrix": {
+            "tn": 331,
+            "fp": 1062,
+            "fn": 147,
+            "tp": 2460
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v6_medical",
+      "created_at": "2025-12-31T12:57:07.781908",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "model": "modeling\\artifacts\\model_B_medical_v7.joblib"
+      },
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.19,
+          "roc_auc": 0.5178807897782518,
+          "pr_auc": 0.6623765435833717,
+          "precision": 0.65175,
+          "recall": 1.0,
+          "f1": 0.7891630089299229,
+          "confusion_matrix": {
+            "tn": 0,
+            "fp": 1393,
+            "fn": 0,
+            "tp": 2607
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.35,
+          "roc_auc": 0.5939276358778935,
+          "pr_auc": 0.7017924168869972,
+          "precision": 0.6984667802385008,
+          "recall": 0.9436133486766398,
+          "f1": 0.8027410670582477,
+          "confusion_matrix": {
+            "tn": 331,
+            "fp": 1062,
+            "fn": 147,
+            "tp": 2460
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v6_medical",
+      "created_at": "2025-12-31T14:12:20.783170",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "model": "modeling\\artifacts\\model_B_medical_v7.joblib"
+      },
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.27,
+          "roc_auc": 0.4978317804155855,
+          "pr_auc": 0.6525561320432777,
+          "precision": 0.6516403706486351,
+          "recall": 0.9980820866896817,
+          "f1": 0.7884848484848485,
+          "confusion_matrix": {
+            "tn": 2,
+            "fp": 1391,
+            "fn": 5,
+            "tp": 2602
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.35,
+          "roc_auc": 0.5962792481779824,
+          "pr_auc": 0.6971501098078309,
+          "precision": 0.6955782312925171,
+          "recall": 0.9413118527042578,
+          "f1": 0.8,
+          "confusion_matrix": {
+            "tn": 319,
+            "fp": 1074,
+            "fn": 153,
+            "tp": 2454
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v6_medical",
+      "created_at": "2025-12-31T14:14:24.915148",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "model": "modeling\\artifacts\\model_B_medical_v7.joblib"
+      },
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.27,
+          "roc_auc": 0.4978317804155855,
+          "pr_auc": 0.6525561320432777,
+          "precision": 0.6516403706486351,
+          "recall": 0.9980820866896817,
+          "f1": 0.7884848484848485,
+          "confusion_matrix": {
+            "tn": 2,
+            "fp": 1391,
+            "fn": 5,
+            "tp": 2602
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.35,
+          "roc_auc": 0.5962792481779824,
+          "pr_auc": 0.6971501098078309,
+          "precision": 0.6955782312925171,
+          "recall": 0.9413118527042578,
+          "f1": 0.8,
+          "confusion_matrix": {
+            "tn": 319,
+            "fp": 1074,
+            "fn": 153,
+            "tp": 2454
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v6_medical",
+      "created_at": "2025-12-31T15:18:57.779236",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {
+        "model": "modeling\\artifacts\\model_B_medical_v7.joblib"
+      },
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.01,
+          "roc_auc": 0.506567304162877,
+          "pr_auc": 0.6646993696282595,
+          "precision": 0.65175,
+          "recall": 1.0,
+          "f1": 0.7891630089299229,
+          "confusion_matrix": {
+            "tn": 0,
+            "fp": 1393,
+            "fn": 0,
+            "tp": 2607
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.35,
+          "roc_auc": 0.5968799556993691,
+          "pr_auc": 0.7026746115664718,
+          "precision": 0.6966958486303304,
+          "recall": 0.9462984273110855,
+          "f1": 0.802537410540013,
+          "confusion_matrix": {
+            "tn": 319,
+            "fp": 1074,
+            "fn": 140,
+            "tp": 2467
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    },
+    {
+      "model_version": "v9_ultimate",
+      "created_at": "2025-12-31T15:43:30.357717",
+      "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+      "artifact_paths": {},
+      "report_paths": {},
+      "metrics_summary": {
+        "stage_a": {
+          "split": "test",
+          "threshold": 0.3,
+          "roc_auc": 0.49749473434353525,
+          "pr_auc": 0.6599989447632671,
+          "precision": 0.6515531062124249,
+          "recall": 0.997698504027618,
+          "f1": 0.7883012577663282,
+          "confusion_matrix": {
+            "tn": 2,
+            "fp": 1391,
+            "fn": 6,
+            "tp": 2601
+          }
+        },
+        "stage_b": {
+          "split": "test",
+          "threshold": 0.3,
+          "roc_auc": 0.6009992700088749,
+          "pr_auc": 0.7040225266979644,
+          "precision": 0.653672032193159,
+          "recall": 0.9969313387034906,
+          "f1": 0.7896096004861005,
+          "confusion_matrix": {
+            "tn": 16,
+            "fp": 1377,
+            "fn": 8,
+            "tp": 2599
+          }
+        }
+      },
+      "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+    }
+  ],
+  "latest": {
+    "model_version": "v1.0.20251230001943",
+    "created_at": "2025-12-30T00:19:43.873406",
+    "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+    "artifact_paths": {
+      "stage_A": {
+        "model": "modeling\\artifacts\\model_A_screening.joblib",
+        "preprocessing": "modeling\\artifacts\\preprocessing_A.joblib",
+        "features": "modeling\\artifacts\\feature_list_A.json",
+        "metadata": "modeling\\artifacts\\model_metadata.json"
+      },
+      "stage_B": {
+        "model": "modeling\\artifacts\\model_B_triage.joblib",
+        "preprocessing": "modeling\\artifacts\\preprocessing_B.joblib",
+        "features": "modeling\\artifacts\\feature_list_B.json",
+        "metadata": "modeling\\artifacts\\model_metadata.json"
+      }
+    },
+    "report_paths": {
+      "stage_A": {
+        "metrics": "modeling\\reports\\model_metrics.json",
+        "confusion_matrices": "modeling\\reports\\confusion_matrices.json",
+        "split_report": "modeling\\reports\\data_split_report.json",
+        "calibration": "modeling\\reports\\calibration_report.json"
+      },
+      "stage_B": {
+        "metrics": "modeling\\reports\\model_metrics.json",
+        "confusion_matrices": "modeling\\reports\\confusion_matrices.json",
+        "split_report": "modeling\\reports\\data_split_report.json",
+        "calibration": "modeling\\reports\\calibration_report.json"
+      }
+    },
+    "metrics_summary": {
+      "stage_A": {
+        "val_roc_auc": 0.5006018089791386,
+        "val_pr_auc": 0.6559631573560001,
+        "val_f1": 0.7888349514563107,
+        "test_roc_auc": 0.49475059003714944,
+        "test_pr_auc": 0.6556005135749972,
+        "test_f1": 0.7872630780894617,
+        "threshold": 0.1
+      },
+      "stage_B": {
+        "val_roc_auc": 0.5707694866463393,
+        "val_pr_auc": 0.6933033598322929,
+        "val_f1": 0.7918813427010148,
+        "test_roc_auc": 0.5790459778755689,
+        "test_pr_auc": 0.6967964566448095,
+        "test_f1": 0.7891706861677299,
+        "threshold": 0.18999999999999995
+      }
+    }
+  },
+  "latest_improved": {
+    "model_version": "v9_ultimate",
+    "created_at": "2025-12-31T15:43:30.357717",
+    "dataset_hash": "492d1e13c212d57951ebf44b11882823d1e132861e3a5c7cd2ef13902c600ce9",
+    "artifact_paths": {},
+    "report_paths": {},
+    "metrics_summary": {
+      "stage_a": {
+        "split": "test",
+        "threshold": 0.3,
+        "roc_auc": 0.49749473434353525,
+        "pr_auc": 0.6599989447632671,
+        "precision": 0.6515531062124249,
+        "recall": 0.997698504027618,
+        "f1": 0.7883012577663282,
+        "confusion_matrix": {
+          "tn": 2,
+          "fp": 1391,
+          "fn": 6,
+          "tp": 2601
+        }
+      },
+      "stage_b": {
+        "split": "test",
+        "threshold": 0.3,
+        "roc_auc": 0.6009992700088749,
+        "pr_auc": 0.7040225266979644,
+        "precision": 0.653672032193159,
+        "recall": 0.9969313387034906,
+        "f1": 0.7896096004861005,
+        "confusion_matrix": {
+          "tn": 16,
+          "fp": 1377,
+          "fn": 8,
+          "tp": 2599
+        }
+      }
+    },
+    "improvements": "hyperparameter_tuning,early_stopping,class_weights,calibration,feature_engineering,ensemble,knn_imputation"
+  }
+}

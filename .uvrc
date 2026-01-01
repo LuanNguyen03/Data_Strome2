@@ -1,0 +1,7 @@
+# UV configuration for project isolation
+# This ensures UV uses a local .venv in the project root
+# and doesn't interfere with other projects
+
+# Use project-local virtual environment
+# UV will create .venv/ in the project root automatically
+

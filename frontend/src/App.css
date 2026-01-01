@@ -1,0 +1,115 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  color: white;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.app-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.header-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.app-main {
+  flex: 1;
+  padding: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 200px);
+}
+
+.placeholder {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 2px dashed #ccc;
+}
+
+.placeholder h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.placeholder p {
+  color: #666;
+  margin: 1rem 0;
+}
+
+.placeholder a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.placeholder a:hover {
+  text-decoration: underline;
+}
+
+.app-footer {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.disclaimer {
+  margin: 0;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  .app-header,
+  .app-footer {
+    background-color: #f5f5f5;
+    color: #213547;
+  }
+  
+  .subtitle {
+    color: #666;
+  }
+  
+  .placeholder {
+    background-color: #fff;
+    border-color: #ddd;
+  }
+}
+
